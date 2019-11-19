@@ -86,13 +86,13 @@ if __name__ == '__main__':
     thresh = 0.7
 
     print("[INFO] starting video stream...")
-    #vs = VideoStream(src=0).start()
-    vs = cv2.VideoCapture('1.mp4')
+    vs = VideoStream(src=0).start()
+    #vs = cv2.VideoCapture('1.mp4')
     time.sleep(2.0)
 
     while True:
-        #frame = vs.read()
-        frame = vs.read()[1]
+        frame = vs.read()
+        #frame = vs.read()[1]
         frame = imutils.resize(frame, width=600)
         #frame = imutils.rotate(frame, -90)
         (h, w) = frame.shape[:2]
