@@ -163,7 +163,7 @@ if __name__ == '__main__':
                 img = crop_with_ldmk(frame,ldmk)
 
                 time1 = time.time()
-                attack_prob = demo(img)#预测的概率为是假的概率
+                attack_prob = demo(img)
                 time2 = time.time()
                 print('prob times : %.3f ms'%((time2-time1)*1000))
                 print('@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@')
